@@ -1,0 +1,39 @@
+{{#> layout currentPage="Edit hero"}}
+    <!-- EDIT hero -->
+    <form id="create-hero" action="/hero-update/{{index}}?_methodPATCH" method="post" class="create-hero-form" >
+      <h1>Edit  hero</h1>
+
+      <div class="input-group mb-3">
+          <!-- <span class="input-group-text" id="title">Title</span> -->
+          <input name="title" id="title" type="text" class="form-control" aria-label="Sizing example input"
+          aria-describedby="title"
+          placeholder="Title" value="{{hero.title}}"
+          required>
+      </div>
+
+
+      <div class="input-group mb-3">
+          <span class="input-group-text"> Content </span>
+          <textarea name="content"
+          id="content" 
+          class="form-control" 
+          aria-label="content"
+          rows="6" required> {{hero.content}}
+      </textarea>
+      </div>
+
+      <!-- <div class="form-field">
+          <label for="image">upload image</label>
+          <input id="image" type="file" required>
+      </div> -->
+
+      <div class="input-group mb-3">
+          <input name="image" type="file" class="form-control" id="image">
+          <label class="input-group-text" for="image" >Upload</label>
+        </div>
+
+      <div class="button-container">
+          <button type="submit">Submit</button>
+      </div>
+  </form>
+  {{/layout}}

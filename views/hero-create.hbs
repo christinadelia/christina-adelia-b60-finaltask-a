@@ -1,0 +1,35 @@
+{{#> layout currentPage="Create-hero"}}
+
+<form id="create-blog" action="/hero-create" method="post"  class="create-hero-form" >
+      <h1>Create Hero</h1>
+
+      <div class="input-group mb-3">
+          <input name="title" id="title" type="text" class="form-control" aria-label="Sizing example input"
+          aria-describedby="title"
+          placeholder="Name of Hero" 
+          required>
+      </div>
+
+
+      <div class="input-group mb-3">
+          <span class="input-group-text"> Hero Type </span>
+          <textarea name="content"
+          id="content" 
+          class="form-control" 
+          aria-label="Description Hero and Type"
+          rows="1" required>
+      </textarea>
+      </div>
+
+
+      <div class="input-group mb-3">
+          <input name="image" type="file" class="form-control" id="image">
+          <label class="input-group-text" for="image" >Upload</label>
+        </div>
+
+      <div class="button-container">
+          <button type="submit">Submit</button>
+          <a href="hero-list" class="hero-post-button">Back to Hero Page</a>
+      </div>
+  </form>
+    {{/layout}}

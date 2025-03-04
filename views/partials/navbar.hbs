@@ -1,0 +1,13 @@
+<nav>
+      <div class="main-menu">
+          <ul class="container">
+            <h1>7DW</h1>
+          </ul>
+           {{#if user}}
+                <span class="me-3">Selamat datang, {{user.name}}</span>
+                <a class="nav-login-button" href="/logout">Logout</a>
+                 {{else}}
+                    <a class="nav-login-button" href="auth-login">login</a>
+                {{/if}}
+      </div>
+  </nav>

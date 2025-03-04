@@ -1,0 +1,38 @@
+{{#> layout currentPage="hero"}}
+    <!-- hero LIST -->
+    <main>
+      <h1 style="text-align: center;margin-top: 30px;">My Heros</h1>
+      <div style=" width: 90%; margin: 10px auto; text-align:right">
+      <a href="/hero-create" class="hero-post-button">Create hero</a>
+      </div>
+    <section
+      id="heroList"
+      class="hero-list" >
+
+      {{#each heros }}
+      <article class="hero-item">
+        <div class="hero-item-img">
+          <img src={{this.image}} alt="" />
+        </div>
+        <div class="hero-item-text">
+          <div class="hero-item-buttons">
+            <a href="/hero-edit/{{@index}}" class="btn btn-primary">Edit hero</a>
+            <form style="display: inline;" action="/hero/{{@index}}?_methode=DELETE" method="post">
+            <button onclick="return confirm ('Are u sure u want to delete?')" class="btn btn-danger" type="submit">Delete hero</button>
+
+            </form>
+          </div>
+          <a href="/hero/{{@index}}" style="text-decoration: none">
+            <h1 class="hero-item-title">{{this.title}}</h1>
+          </a>
+          <p>{{formatDateToWIB this.createdAt}} |{{this.type}}</p>
+          <p>
+           {{this.content}}
+          </p>
+          <p class="hero-item-relative-time">{{getRelativeTime this.createdAt}}</p>
+        </div>
+      </article>
+      {{/each}}
+    </section>
+  </main>
+  {{/layout}}

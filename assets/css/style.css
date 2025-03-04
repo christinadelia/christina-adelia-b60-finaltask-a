@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  font-family: "Poppins", sans-serif;
+  
+}
+
+body {
+  margin: 0;
+  background-color: #000000 !important;
+  color: rgb(255, 255, 255) !important;
+}
+/* NAVBAR */
+nav {
+  background-color: #000000;
+  padding: 2px 40px;
+}
+
+.main-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container h1 {
+    color: orange;
+    text-align: left;}
+
+.nav-login-button {
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 50px ;
+}
+
+/* AUTHENTICATION */
+.auth-form{
+  width: 400px;
+  margin: 30px auto;
+}
+.auth-form button {
+  font-size: 16px;
+  font-family: "Poppins", serif;
+  background-color: red;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.form-field input,
+select,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #eaeaea;
+  border: 2px solid #d1d1d1;
+  border-radius: 5px;
+}
+
+/* CREATE hero FORM STYLES */
+
+.create-hero-form {
+  width: 500px;
+  margin: 30px auto;
+}
+
+.create-hero-form h1 {
+  text-align: center;
+}
+
+.button-container {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.create-hero-form button {
+  font-size: 16px;
+  font-family: "Poppins", serif;
+  background-color: red;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* hero LIST STYLES */
+.hero-list {
+  width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 20px;
+}
+
+
+.hero-item {
+  padding: 15px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.hero-item-img img {
+  width: 100%;
+}
+
+.hero-item-text {
+  border: 1px solid #aaa;
+  padding: 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.hero-item-title {
+  color: black;
+  font-size: 16px;
+  margin: 0;
+}
+
+.hero-item-buttons {
+  text-align: center;
+}
+
+.hero-edit-button {
+  font-size: 16px;
+  font-family: "Poppins", serif;
+  background-color: #ccc;
+  color: black;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-post-button {
+  font-size: 16px;
+  font-family: "Poppins", serif;
+  background-color: red;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-item-relative-time {
+  color: #aaa;
+  font-size: 14px;
+  text-align: right;
+}
+
+/* hero DETAIL STYLES */
+.hero-detail {
+  width: 60%;
+  margin: 40px auto;
+}
+
+.hero-detail img {
+  width: 100%;
+}

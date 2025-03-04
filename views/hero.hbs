@@ -1,0 +1,31 @@
+{{#> layout currentPage="Create-hero"}}
+
+<form id="create-hero" action="/hero-create" method="post" class="create-hero-form">
+      <h1>Create New Hero</h1>
+
+      <div class="form-field">
+        <label for="title"> heroes name</label>
+        <input name="title" id="title" type="text" required />
+      </div>
+
+      <div class="form-field">
+        <label for="hero_type">Tipe Hero:</label>
+        <select name="hero-type" id="hero-type" name="hero_type" required>
+        <option value="Strength">Strength</option>
+        <option value="Agility">Agility</option>
+        <option value="HP">HP</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="image">upload image</label>
+        <input id="image" type="file" />
+      </div>
+
+      <div class="button-container">
+        <button type="submit">Submit</button>
+        <a href="index" class="hero-post-button">Back to Hero Page</a>
+      </div>
+      </div>
+    </form>
+    {{/layout}}
